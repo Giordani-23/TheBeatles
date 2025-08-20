@@ -1,36 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beatles</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        outline: none;
-        border: none;
-        text-decoration: none;
-    }
+    <link rel="stylesheet" href="style.css" />
 
-    html{
-        scroll-behavior: smooth;
-    }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-</style>
-
-<body>
+  <body>
     <nav class="navbar">
-        <div></div>
-    </nav>
-</body>
+      <a
+        href="https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2?si=AdDUPpSoRKyPeN4g7L7g7g"
+        class="nav-logo"
+      >
+        <img src="img/TheBeatlesLogo.png" alt="" />
+      </a>
 
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#members">Band Members</a>
+        <a href="#discography">Discography</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#gallery">Galery</a>
+      </div>
+
+      <div class="navbar-menu">
+        <a href="" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>The Beatles</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+          sapiente?
+        </p>
+      </main>
+    </section>
+
+    <section class="members" id="members">
+      <div class="container">
+        <h2>The Beatles Members</h2>
+
+        <div class="content">
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/John Lennon.jpeg" alt="Foto" />
+            </div>
+            <div class="name">John Lennon</div>
+            <hr class="divider" />
+            <div class="role">Guitarist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Paul McCartney.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Paul Mccartney</div>
+            <hr class="divider" />
+            <div class="role">Bassist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/George Harrison.jpeg" alt="Foto" />
+            </div>
+            <div class="name">George Harrison</div>
+            <hr class="divider" />
+            <div class="role">Guitarist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Ringo Starr.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Ringo Starr</div>
+            <hr class="divider" />
+            <div class="role">Drum</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Pete Best.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Pete Best</div>
+            <hr class="divider" />
+            <div class="role">Drum</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Stuart Sutcliffe.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Stuart Sutcliffe</div>
+            <hr class="divider" />
+            <div class="role">Bassist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Jimmie Nicol.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Jimmie Nicol</div>
+            <hr class="divider" />
+            <div class="role">Drum</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Chas Newby.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Chas Newby</div>
+            <hr class="divider" />
+            <div class="role">Guitarist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Billy Preston.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Billy Preston</div>
+            <hr class="divider" />
+            <div class="role">Guitarist</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Norman Chapman.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Norman Chapman</div>
+            <hr class="divider" />
+            <div class="role">Drum</div>
+          </div>
+
+          <div class="card">
+            <div class="image-frame">
+              <img src="img/members/Tommy Moore.jpeg" alt="Foto" />
+            </div>
+            <div class="name">Tommy Moore</div>
+            <hr class="divider" />
+            <div class="role">Drum</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discography" class="discography">
+      <div class="container">
+        <h2>The Beatles Discography</h2>
+
+        <div class="content"> 
+          <div class="card">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+      <div class="container">
+        <h2>The Beatles Timeline</h2>
+
+        <div class="content"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>The Beatles Gallery</h2>
+
+        <div class="content"></div>
+      </div>
+    </section>
+  </body>
 </html>
