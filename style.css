@@ -45,6 +45,17 @@ body {
   width: 65px;
 }
 
+.navbar .navbar-nav {
+  padding: 0.6rem 1%;
+  border-radius: 1rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.277); */
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .navbar .navbar-nav a {
   color: var(--text2);
   display: inline-block;
@@ -185,7 +196,7 @@ body {
   justify-content: center;
 }
 
-.members .content .card {
+.members .container .content .card {
   flex: 0 0 20%;
   max-width: 200px;
   background: var(--bg);
@@ -199,13 +210,13 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.members .content .card .image-frame {
+.members .container .content .card .image-frame {
   width: 100%;
   border-radius: 28px;
   overflow: hidden;
 }
 
-.members .content .card .image-frame img {
+.members .container .content .card .image-frame img {
   width: 100%;
   aspect-ratio: 3 / 5;
   object-fit: cover;
@@ -213,15 +224,15 @@ body {
   background: #000;
 }
 
-.members .content .card .name {
+.members .container .content .card .name {
   font-weight: 600;
-  font-size: 15 px;
+  font-size: 15px;
   color: #000;
   text-align: center;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
 
-.members .content .card .divider {
+.members .container .content .card .divider {
   width: 70%;
   height: 3px;
   background: #000;
@@ -230,7 +241,7 @@ body {
   border-radius: 2px;
 }
 
-.members .content .card .role {
+.members .container .content .card .role {
   font-size: 15px;
   color: #000;
   opacity: 0.85;
@@ -239,4 +250,71 @@ body {
 }
 
 /* Discography */
+.discography .container .content .discocard {
+  flex: 0 0 20%;
+  max-width: 200px;
+  border-radius: 40px;
+  padding: 20px 16px 26px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
+.discography .container {
+  text-align: center;
+  justify-content: center;
+}
+
+.discography .container .content {
+  gap: 4.4rem;
+}
+
+.discography .container .content .discocard .discoimage {
+  display: flex;
+}
+
+.discography .container .content .discocard .discoimage img {
+  display: flex;
+  border-radius: 1.4rem;
+  max-width: 250px;
+}
+
+.discography .container .content .discocard .albumname {
+  text-align: center;
+  background-image: url(img/body-bg.jpg);
+  border-radius: 0.6rem;
+  min-width: 230px;
+  max-width: 230px;
+}
+
+.discography .container .content .discocard .albumname p{
+  text-decoration: none;
+  color: var(--text2);
+}
+
+.discography .container .content .albumfooter {
+  text-decoration: none;
+  min-width: 350px;
+  max-width: 350px;
+  padding: 0.6rem 1%;
+  border-radius: 1rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.277); */
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.discography .container .content .albumfooter:hover {
+  background-color: #afafaf45;
+}
+
+.discography .container .content .albumfooter p {
+  text-align: center;
+  color: var(--text2);
+  font-weight: 150px;
+  font-size: 1.5rem;
+}
